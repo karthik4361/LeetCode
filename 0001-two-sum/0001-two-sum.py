@@ -5,13 +5,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        hset= set()
-        ans =[]
+        hashmap = {}
         for i in range(len(nums)):
-            k = target-nums[i]
-            if k in hset:
-                ans = [nums.index(k),i]
-                break
-            hset.add(nums[i])
-        return ans 
+            complement = target - nums[i]
+            if complement in hashmap:
+                return [i, hashmap[complement]]
+            hashmap[nums[i]] = i
                 
