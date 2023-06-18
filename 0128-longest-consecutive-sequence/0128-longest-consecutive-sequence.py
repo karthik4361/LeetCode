@@ -8,7 +8,7 @@ class Solution(object):
         for num in nums:
             finalSet.add(num)
         ans = 0
-        for num in nums:
+        for num in finalSet:
             if num-1 not in finalSet:
                 chain = 1
                 while num+1 in finalSet:
