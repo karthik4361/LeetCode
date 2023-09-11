@@ -23,7 +23,7 @@ class Solution {
             Integer key = entry.getKey();
             List<Integer> values = entry.getValue();
             int l= 0;
-            List<Integer> lst= new ArrayList<Integer>();
+            List<Integer> lst= new ArrayList<>();
             for(int i=0;i<values.size();i++)
             {
                 l++;
