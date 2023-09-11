@@ -2,7 +2,7 @@ import java.util.*;
 class Solution {
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
 
-        SortedMap<Integer,List<Integer>> mp = new TreeMap<Integer,List<Integer>>();
+        SortedMap<Integer,List<Integer>> mp = new TreeMap<>();
 
         for(int i=0;i<groupSizes.length;i++)
         {
